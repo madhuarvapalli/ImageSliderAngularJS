@@ -11,6 +11,8 @@
     <script src="app.js"></script>
   </head>
   <body ng-controller="MainCtrl">
-
+    <div class="container slider">
+      <img ng-repeat="item in slides" class="slide" ng-src="{{item.image}}" />
+    </div>
   </body>
 </html>
