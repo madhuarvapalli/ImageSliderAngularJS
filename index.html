@@ -8,12 +8,14 @@
     <script src="lib/angular.min.js"></script>
     <script src="lib/angular-animate.min.js"></script>
     <script src="lib/jquery-2.1.4.min.js"></script>
+    <script src="lib/TweenMax.min.js"></script>
     <script src="app.js"></script>
   </head>
   <body ng-controller="MainCtrl">
     <div class="container slider">
-      <img ng-repeat="item in slides" class="slide"
-         ng-hide="!isCurrentIndex($index)" ng-src="{{item.image}}"/>
+      <img ng-repeat="item in slides" class="slide" ng-hide="!isCurrentIndex($index)" ng-src="{{item.image}}"/>
+      <a class="arrow prev" href="#" ng-click="nextSlide()"></a>
+      <a class="arrow next" href="#" ng-click="prevSlide()"></a>
       <nav class="nav">
         <div class="wrapper">
           <ul class="dots">
@@ -23,7 +25,7 @@
               </a>
             </li>
           </ul>
-        </nav>  
+        </nav>
       </div>
     </div>
   </body>
