@@ -8,4 +8,14 @@ var imageSlider = angular.module('imageSlider', ['ngAnimate'])
       {image:'' description: ''},
       {image:'' description: ''}
     ];
+
+    $scope.currentIndex = 0;
+
+    $scope.setCurrentIndex = function (index) {
+      $scope.currentIndex = index;
+    };
+
+    $scope.isCurrentIndex = function (index) {
+      return $scope.currentIndex === index;
+    };
   });
