@@ -1,0 +1,16 @@
+.center {
+  margin-top: 10%;
+  text-align: center;
+}
+
+.darkmode {
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  background-color: black;
+  /*background-color: black;
+  color: red;*/
+}
+
+.enter {
+  width: 150px
+}
