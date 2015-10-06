@@ -9,9 +9,11 @@
     <script src="lib/angular-animate.min.js"></script>
     <script src="lib/jquery-2.1.4.min.js"></script>
     <script src="lib/TweenMax.min.js"></script>
+    <script src="controllers/ImagesController.js"></script>
+    <script src="services/ImagesFactory.js"></script>
     <script src="app.js"></script>
   </head>
-  <body ng-controller="MainCtrl">
+  <body ng-controller="ImagesCtrl">
     <div class="container slider">
       <img ng-repeat="item in slides" class="slide" ng-hide="!isCurrentIndex($index)" ng-src="{{item.image}}"/>
       <a class="arrow prev" href="#" ng-click="nextSlide()"></a>
