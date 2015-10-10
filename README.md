@@ -9,7 +9,7 @@ Setup
 ----------
 * Clone repository:
 ```console
-$ git clone https://github.com/micahcourey/MovieReviewSite.git
+$ git clone https://github.com/micahcourey/ImageSliderAngularJS.git
 ```
 * Open index.html in a web browser
 
